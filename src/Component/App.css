@@ -1,0 +1,245 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+
+
+/* *************************************************   Admin   ************************************* */
+
+
+.arrow-icon{
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+nav{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.brand{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #7A86B6;
+}
+.brand:hover{
+  color: #7A86B6;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.collapse{
+  margin-right: 2rem;
+}
+
+.nav-link{
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.right{
+  max-width: 60% !important;
+  margin: 1.5rem auto;
+}
+
+h4{
+  text-align: center;
+}
+
+input:not([type=checkbox]), select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit], input[type=button], .submit {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=submit]:hover, input[type=button]:hover, .submit:hover {
+  background-color: #45a049;
+  }
+.check-lable{
+  margin: 0 10px; 
+  font-size: 1rem;
+}
+
+.box {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: grid;
+}
+
+.warning{
+  color:red
+}
+
+.card{
+  max-width: 90%;
+  margin: 0 5%;
+}
+
+.logout-li{
+  position: fixed;
+  right: 1rem;
+}
+
+.logout{
+  color: red !important;
+}
+
+.table-container{
+  overflow: auto;
+}
+
+table{
+  padding: 2rem;
+  text-align: center;
+}
+
+.edit{
+  color: #fff !important;
+  transition: 0.5s all ease;
+}
+
+.edit:hover{
+  color: red !important;
+}
+
+
+
+/* ************************************ Edit Popup ****************************************** */
+
+#id01 {
+  display: none;
+}
+
+
+#id02 {
+  display: none;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 15%;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.modal-content {
+  width: 30%;
+}
+.popup-heading {
+  color: #4679ee;
+  text-align: center;
+
+  padding: 20px 0 0 0;
+  text-shadow: 1px 1px 0 hsl(200 50% 30%);
+}
+
+.popup-img-container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.popup-img {
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.clearfix {
+  display: flex;
+}
+.okbtn {
+  margin: 10px auto;
+  padding: 10px 100px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  body {
+  background-color: lightblue;
+  }
+  .card{
+  max-width: 100%;
+  }
+  input[type=submit], input[type=button], .submit{
+    background-color: blue;
+  }
+  .right{
+    margin: 10px !important;
+    max-width: 96% !important; 
+  }
+ .logout-li{
+  position: static;
+  }
+  .close{
+    right: 10px;
+    top: -0.5rem;
+  }
+ 
+}
+
+
+.center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
